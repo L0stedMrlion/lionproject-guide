@@ -1,18 +1,30 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from "react";
+import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  useNextSeoProps() {
+    return {
+      titleTemplate: "Lion Guide",
+    };
+  },
+  navigation: {
+    prev: false,
+    next: false,
+  },
+  primaryHue: 42,
+  primarySaturation: 81,
+  docsRepositoryBase:
+    "https://github.com/L0stedMrlion/lion_recoil/blob/main/config.lua",
+  logo: <span>🦁 Lion Guide</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: "https://github.com/L0stedMrlion/lion_recoil",
   },
   chat: {
-    link: 'https://discord.com',
+    link: "https://discord.gg/dNrayyRZ9j",
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    text: 'Nextra Docs Template',
+    text: "🦁 Lion's Project™",
   },
-}
+};
 
-export default config
+export default config;
